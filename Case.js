@@ -129,3 +129,19 @@ if(hora<2){
 // }
 
 // funcionDeExpresion()
+
+let usuario = 'admin'
+let contraseña = 'admin'
+let inputUsuario = prompt('Ingrese su Usuario')
+
+
+if (usuario==inputUsuario){
+let inputContraseña = prompt('Ingrese su Contraseña')
+ if(contraseña==inputContraseña){
+      console.log('Bienvenido ' + inputUsuario)
+ } else{
+    console.log('Error de credenciales')
+ }
+} else{
+    console.log('Usuario no existente')
+}
