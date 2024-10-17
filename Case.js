@@ -134,14 +134,34 @@ let usuario = 'admin'
 let contraseña = 'admin'
 let inputUsuario = prompt('Ingrese su Usuario')
 
+function ConsultarSaldo(){
+console.log('Su saldo es: ')
+}
+function RetirarDinero(){
+console.log('Hizo un retiro por: ')
+}
+function TransferirDinero(){
+console.log('Hizo una transferencia por: ')
+}
+function ConsignarDinero(){
+console.log('Hizo una consignación por: ')
+}
+
+
 
 if (usuario==inputUsuario){
 let inputContraseña = prompt('Ingrese su Contraseña')
  if(contraseña==inputContraseña){
       console.log('Bienvenido ' + inputUsuario)
+
+while(){
+    
+}
+
  } else{
     console.log('Error de credenciales')
  }
 } else{
     console.log('Usuario no existente')
 }
+
