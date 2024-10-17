@@ -1,0 +1,91 @@
+Tipos de Datos:
+-Numbre---Numeros
+-String---Cadena de caracteres o texto
+-Bool---Verdadero o falso
+-Null--Hace referencia a la ausencia de informacion
+-Undefined--Hace referencia a la falta de informacion
+-Object--Hace referencia a un objeto
+
+
+Condicionales JavaScript
+1-Simple:if
+  Evalua una condicion y se ejecuta el código siempre y cuando 
+  el valor sea true
+2-Dual o Compuesto:if else
+  Evalua una condicion y se ejecuta el código en dos caminos 
+  diferentres dependiendo el valor de la condición (true o false)
+3-Anidado:if...else if...else
+  Es una mezcla del simple con el dual n cantidad de veces 
+  (n puede ser cualquier número)
+4-Multiple:swithc
+  Es un menú de opciones 
+5-En lineas:Operador ternario (? :)
+  Es como el dual pero más lindo 
+
+Expreciones Booleanas
+Es una expreción que se evalúa con un true o false.
+Es el resultado de comparar dos valores 
+
+Comparadores
+    Menor: < (Excluyente)
+    Mayor: > (Excluyente)
+    Mayor o igual: >= (Incluyente)
+    Menor o igual: <= (Incluyente)
+    Diferente simple: !=
+    Diferente estricto: !==
+    Comparador simple: ==
+    Comparador estricto: ===
+
+    --Bucles, Loops o estructuras de repeticion
+
+(Cilco For, Ciclo While, Ciclo Do While, Ciclo For in) Son los que veremos en la tercera clase de JavaScript.
+
+Ciclo For Each
+Mop
+Filter 
+Find 
+Some
+Splice
+
+
+for -> Estructura de repeticion que se ejecuta N/n cantidad de veces donde se puede conocer o no el valor de N/n 
+    Requisitos: 
+    1-Variable de control
+    2-Control de la variable (Condicional)
+    3-Incremento de la variable
+    Todo ciclo For se puede convertir a un Ciclo Mientras
+
+While-> Estructura que se ejectuta cantidad de veces, donde se puede conocer o  no el valor de N/n.
+     Requisitos: 
+    1-Variable de control
+    2-Control de la variable (Condicional)
+    3-Incremento de la variable
+    La variable de control se define por fuera del ciclo, se define la condicion dentro del ciclo y se hace el control dentro del ciclo
+
+Do While ->Estructura que se ejectuta cantidad de veces, donde se puede conocer o  no el valor de N/n.
+     Requisitos: 
+    1-Variable de control
+    2-Control de la variable (Condicional)
+    3-Incremento de la variable
+    La variable de control se define por fuera del ciclo, se define la condicion dentro del ciclo y se hace el control dentro del ciclo
+
+Acomuladores:varable o entrono auxiliar que acumula un valor especifico por cada contador. Siempre se define Por fuera del ciclo
+Contadores:variable o entrono auxiliar que cuenta de n en n, según la cantidad de veces que se ejecuta un codigo
+//Calcular el promedio de Salarios de 5 Empleados
+variable+=(Acomuladores)
+
+FUNCIONES
+Es la encapsulacion de código que me permite reutilizarlo donde quiera 
+y cuando quiera, solo con una unica definicion
+
+-->Funciones regulares/tradicionales:
+    Funciones de expresión
+    -Una funcion de ecpresión tiene un alcance local, es decir, que su contexto aplica
+    solo despued de su definicion
+    Funciones declarativas
+    -Una funcion declarativa tiene un alcance global (hoisting de todo el documento),
+    es decir que se mueve a su contexto global
+-->Funciones Flecha:
+    Funciones de expresión
+-->Funciones anonimas:
+    Funciones anonimas
