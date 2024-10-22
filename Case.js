@@ -133,18 +133,45 @@ if(hora<2){
 let usuario = 'admin'
 let contraseña = 'admin'
 let inputUsuario = prompt('Ingrese su Usuario')
+let repetir = true
+let valorTransaccion
+let saldoCuenta = 1200000
 
 function ConsultarSaldo(){
-console.log('Su saldo es: ')
+console.log('Su saldo es: ' + saldoCuenta)
 }
 function RetirarDinero(){
-console.log('Hizo un retiro por: ')
+ valorTransaccion = Number(prompt('Ingrese el monto que desea retirar: '))
+    if(valorTransaccion< 10000){
+        console.log('No se puede retirar menos de 10 000')
+    } else if(valorTransaccion> saldoCuenta){
+        console.log('No tiene suficiente saldo')
+    } else{
+        console.log('Hizo un retiro por: ' + valorTransaccion)
+        saldoCuenta-=valorTransaccion
+        console.log('Su nuevo saldo es: ' + saldoCuenta)
+    }
+
 }
 function TransferirDinero(){
-console.log('Hizo una transferencia por: ')
+    valorTransaccion = Number(prompt('Ingrese el monto que desea transferir: '))
+     if(valorTransaccion> saldoCuenta){
+        console.log('No tiene suficiente saldo')
+    } else{
+        console.log('Hizo una transferencia por: ' + valorTransaccion)
+        saldoCuenta-=valorTransaccion
+        console.log('Su nuevo saldo es: ' + saldoCuenta)
+}
 }
 function ConsignarDinero(){
-console.log('Hizo una consignación por: ')
+    valorTransaccion = Number(prompt('Ingrese el monto que desea consignar: '))
+    if(valorTransaccion< 10000){
+        console.log('No se puede retirar menos de 10 000')
+    } else{
+        console.log('Hizo una consignacion por: ' + valorTransaccion)
+        saldoCuenta+=valorTransaccion
+        console.log('Su nuevo saldo es: ' + saldoCuenta)
+    }
 }
 
 
@@ -153,9 +180,26 @@ if (usuario==inputUsuario){
 let inputContraseña = prompt('Ingrese su Contraseña')
  if(contraseña==inputContraseña){
       console.log('Bienvenido ' + inputUsuario)
-
-while(){
-    
+      
+while(repetir){
+    let opcion = Number(prompt('Seleccione: \n1 - Consultar Saldo. \n2 - Retirar Dinero. \n3 - Transferir. \n4 - Consignar. \n5 - Salir.'))
+    switch(opcion){
+        case 1:
+            ConsultarSaldo()
+            break;
+        case 2:
+            RetirarDinero()
+            break;
+        case 3:
+            TransferirDinero()
+            break;
+        case 4:
+            ConsignarDinero()
+            break;
+        case 5:
+            repetir = false
+            break;
+    }
 }
 
  } else{
